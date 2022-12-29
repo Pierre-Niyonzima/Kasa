@@ -1,0 +1,51 @@
+.card--title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: relative;
+    top: 280px;
+    left: 20px;
+    width: 150px;
+    height: 45px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card--link {
+    text-decoration: none;
+}
+
+.card--picture {
+    background-size: "cover";
+    position: "relative";
+    width: 340px;
+    height: 340px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.card--picture:hover{
+    transform : scale(1.1) ;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 400px) {
+    .card--picture {
+        width: 335px;
+        height: 255px;
+    }
+
+    .card--title {
+        top: 195px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .card--picture {
+        width: 280px;
+        height: 255px;
+        margin: 10px 0;
+    }
+}

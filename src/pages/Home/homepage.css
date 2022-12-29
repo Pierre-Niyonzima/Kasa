@@ -23,6 +23,17 @@
     object-fit: cover;
 }
 
+.accomodation--container {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 100px 50px;
+    padding: 25px;
+    border-radius: 25px;
+    justify-content: space-around;
+}
+
+
 @media screen and (max-width: 1200px) {
     .banner--title {
         top: 26%;
@@ -40,6 +51,10 @@
     .banner--img {
         width: calc(100% - 40px);
     }
+
+    .accomodation--container {
+    margin: 0 20px 50px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -54,10 +69,19 @@
     .banner--img {
         height: 111px
     }
+
+    .banner--container {
+        margin: 20px 0 22px 0;
+    }
 }
 
 @media screen and (min-width: 1540px) {
     .banner--img {
         width: 1440px;
+    }
+
+    .accomodation--container {
+        width: 1440px;
+        margin: auto;
     }
 }
