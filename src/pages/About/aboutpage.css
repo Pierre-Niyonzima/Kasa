@@ -5,3 +5,20 @@
     object-fit: cover;
 }
 
+@media screen and (max-width: 800px) {
+    .banner--responsive--about_page {
+        width: calc(100% - 40px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner--responsive--about_page {
+        height: 223px
+    }
+
+}
+@media screen and (min-width: 1540px) {
+    .banner--responsive--about_page {
+        width: 1440px;
+    }
+}
