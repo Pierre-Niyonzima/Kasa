@@ -1,6 +1,7 @@
 
 import { Fragment } from "react";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import Banner from "../../img/banner.png"
 import "./homepage.css";
 
@@ -15,6 +16,7 @@ function HomePage() {
                     Chez vous, partout et ailleurs
                 </div>
             </div>
+        <Footer/>
     </Fragment>    
     )
 }
