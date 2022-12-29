@@ -1,7 +1,13 @@
+
+import { Fragment } from "react";
+import Header from "../../components/Header/Header";
+
 function HomePage() {
 
-    return (
-        <div>home</div>
+     return (
+    <Fragment>
+        <Header homeView={true} />
+    </Fragment>    
     )
 }
 

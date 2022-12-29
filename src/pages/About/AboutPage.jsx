@@ -1,9 +1,13 @@
+import React, { Fragment } from "react"
+import Header from "../../components/Header/Header";
+import "./aboutpage.css"
+
+
 function AboutPage() {
-
     return (
-        <div>page
-        </div>
-    )
+        <Fragment> <Header aboutView={true} /></Fragment>
+            )
 }
+    
 
-export default AboutPage
+export default AboutPage;
