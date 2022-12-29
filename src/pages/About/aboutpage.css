@@ -1,0 +1,7 @@
+.banner--responsive--about_page {
+    border-radius: 25px;
+    filter: brightness(60%);
+    width: calc(100% - 200px);
+    object-fit: cover;
+}
+
