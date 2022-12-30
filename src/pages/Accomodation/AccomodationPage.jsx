@@ -4,6 +4,7 @@ import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
 import Dropdown from "../../components/Dropdown/Dropdown"
 import Rating from "../../components/Rating/Rating"
+import Tag from "../../components/Tag/Tag"
 import "./accomodationpage.css"
 
 
@@ -33,8 +34,13 @@ function AccomodationPage() {
       <Header />
       {currentAccomodation &&
       (<Fragment>
-        <div className="accomodation--flex"><Rating starsNumber={currentAccomodation.rating} /></div>
-        
+        <div className="accomodation--flex">
+             <div className="accomodation--tags__container">
+                {currentAccomodation.tags.map((tag, index) => (
+                  <Tag key={index} index={index} tagTitle={tag} />
+                ))}
+              </div>
+            <Rating starsNumber={currentAccomodation.rating} /></div>
          <div className="accomodation--flex">
             <Dropdown
               paragraph={currentAccomodation.description}

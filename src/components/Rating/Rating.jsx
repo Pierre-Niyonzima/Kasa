@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import './rating.css'
 import fullStar from "../../img/star-full.png"
 import emptyStar from "../../img/star-empty.png"
