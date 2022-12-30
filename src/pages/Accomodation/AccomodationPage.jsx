@@ -1,9 +1,10 @@
 import React, { Fragment, useState, useEffect } from "react"
-import { useParams, useNavigate} from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
-import Dropdown from "../../components/Dropdown/Dropdown";
-import "./accomodationpage.css";
+import { useParams, useNavigate} from "react-router-dom"
+import Footer from "../../components/Footer/Footer"
+import Header from "../../components/Header/Header"
+import Dropdown from "../../components/Dropdown/Dropdown"
+import Rating from "../../components/Rating/Rating"
+import "./accomodationpage.css"
 
 
 function AccomodationPage() {
@@ -32,6 +33,8 @@ function AccomodationPage() {
       <Header />
       {currentAccomodation &&
       (<Fragment>
+        <div className="accomodation--flex"><Rating starsNumber={currentAccomodation.rating} /></div>
+        
          <div className="accomodation--flex">
             <Dropdown
               paragraph={currentAccomodation.description}
