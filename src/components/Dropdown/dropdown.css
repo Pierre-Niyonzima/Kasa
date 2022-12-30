@@ -50,3 +50,16 @@
     top: 16px;
     right: 19px;
 }
+
+@media screen and (max-width: 425px) {
+    .dropdown--container--values {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1540px) {
+    .dropdown--container--values {
+        width: 1240px;
+    }
+
+}

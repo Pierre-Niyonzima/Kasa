@@ -1,0 +1,6 @@
+.accomodation--flex {
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+    justify-content: space-between;
+}
