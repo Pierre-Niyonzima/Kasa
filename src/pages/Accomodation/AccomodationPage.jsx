@@ -30,7 +30,8 @@ function AccomodationPage() {
   return (
     <Fragment>
       <Header />
-        <Fragment>
+      {currentAccomodation &&
+      (<Fragment>
          <div className="accomodation--flex">
             <Dropdown
               paragraph={currentAccomodation.description}
@@ -41,7 +42,8 @@ function AccomodationPage() {
               title="Équipements"
             />
           </div>
-      </Fragment>
+      </Fragment>)}
+        
       <Footer />
     </Fragment>
   );
