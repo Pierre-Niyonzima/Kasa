@@ -4,6 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Rating from "../../components/Rating/Rating";
+import Carrousel from "../../components/Carrousel/Carrousel";
 import Tag from "../../components/Tag/Tag";
 import "./accomodationpage.css";
 
@@ -32,6 +33,7 @@ function AccomodationPage() {
       <Header />{" "}
       {currentAccomodation && (
         <Fragment>
+          <Carrousel pictures={currentAccomodation.pictures} />
           <div className="accomodation--flex">
             <div>
               <div>
